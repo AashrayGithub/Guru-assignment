@@ -33,7 +33,7 @@ If aligning exchange rates with Chainlink price feeds is essential, here's a pro
 2. **Define Variables:**
     * `x`: Current reserve of ARB in the pool.
     * `y`: Current reserve of USDC in the pool.
-    * `k`: Initial exchange rate from Uniswap V3 pool (k = y / x).
+    * `k`: Initial exchange rate from Uniswap V3 pool (k = x / y).
     * `oracle_ratio`: Desired exchange rate from Chainlink (1 ARB = oracle_ratio USDC).
     * `p`: Small transaction amount for ARB, minimizing impact on the pool's balance.
 3. **Iterative Adjustment:**
